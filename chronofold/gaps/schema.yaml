@@ -1,0 +1,9 @@
+schema: cf-gap/v0.1
+gap:
+  id: required
+  category: [missing_information, inference, assumption, untested, contradiction]
+  statement: required
+  evidence: []
+  affected_invariants: []
+  residual: {}
+  status: [PROVEN, OBSERVED, FALSIFIED, UNRESOLVED]

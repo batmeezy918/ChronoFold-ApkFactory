@@ -1,0 +1,27 @@
+schema: cf-ir/v0.1
+artifact:
+  identity:
+    sha256: required
+    size_bytes: required
+    format: required
+    architecture: required
+  sections: []
+  imports: []
+  exports: []
+  entrypoint: null
+  strings: []
+  provenance:
+    extractor_versions: {}
+    commands: []
+    timestamp_policy: deterministic
+behavior:
+  observables: []
+  states: []
+  transitions: []
+invariants:
+  functional: []
+  numerical: []
+  temporal: []
+  structural: []
+  state: []
+gaps: []

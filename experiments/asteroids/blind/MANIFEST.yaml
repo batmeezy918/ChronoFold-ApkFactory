@@ -1,0 +1,10 @@
+experiment: asteroids-exe-to-apk-blind-v0.1
+target_repository: newagebegins/asteroids
+target_release: v1.0
+blind_input:
+  artifact: ../exe/Asteroids.exe
+  reference_apk: WITHHELD
+  source_tree: WITHHELD
+policy:
+  unknown_is_not_pass: true
+  finite_tests_are_not_universal_proof: true

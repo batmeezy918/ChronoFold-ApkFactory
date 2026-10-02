@@ -1,0 +1,164 @@
+{
+  "artifact": {
+    "architecture": "MACHINE_TYPES.I386",
+    "entrypoint": "0x40e431",
+    "format": "FORMATS.PE",
+    "path": "/root/ChronoFold/Apktool/experiments/asteroids/exe/Asteroids.exe",
+    "sha256": "e9b13fb3f6f0963c6cfccc1df09f3d425f38cba66335ee477592881cdef02cae",
+    "size_bytes": 86528
+  },
+  "pe": {
+    "characteristics": "0x102",
+    "imports": [
+      {
+        "dll": "OPENGL32.dll",
+        "symbols": [
+          "wglGetProcAddress",
+          "wglMakeCurrent",
+          "wglCreateContext"
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          "FreeLibrary",
+          "GetProcAddress",
+          "LoadLibraryA",
+          "OutputDebugStringA",
+          "QueryPerformanceCounter",
+          "GetCurrentProcessId",
+          "IsProcessorFeaturePresent",
+          "IsDebuggerPresent",
+          "EncodePointer",
+          "GetCurrentThreadId",
+          "GetSystemTimeAsFileTime",
+          "DecodePointer",
+          "QueryPerformanceFrequency"
+        ]
+      },
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          "MessageBoxA",
+          "AdjustWindowRect",
+          "GetDC",
+          "UpdateWindow",
+          "GetKeyState",
+          "ShowWindow",
+          "GetCursorPos",
+          "RegisterClassA",
+          "PostQuitMessage",
+          "DefWindowProcA",
+          "PeekMessageA",
+          "DispatchMessageA",
+          "TranslateMessage",
+          "ScreenToClient",
+          "LoadCursorA",
+          "CreateWindowExA"
+        ]
+      },
+      {
+        "dll": "GDI32.dll",
+        "symbols": [
+          "SetPixelFormat",
+          "SwapBuffers",
+          "ChoosePixelFormat"
+        ]
+      },
+      {
+        "dll": "MSVCR120.dll",
+        "symbols": [
+          "__dllonexit",
+          "_calloc_crt",
+          "_unlock",
+          "_lock",
+          "__crtSetUnhandledExceptionFilter",
+          "?terminate@@YAXXZ",
+          "__crtTerminateProcess",
+          "__crtUnhandledException",
+          "_crt_debugger_hook",
+          "_onexit",
+          "_controlfp_s",
+          "_except_handler4_common",
+          "_invoke_watson",
+          "sprintf",
+          "_time64",
+          "_CIatan2",
+          "_libm_sse2_cos_precise",
+          "_libm_sse2_sin_precise",
+          "_libm_sse2_sqrt_precise",
+          "memset",
+          "fmax",
+          "fmin",
+          "fmaxf",
+          "fminf",
+          "vsprintf_s",
+          "_except1",
+          "_XcptFilter",
+          "__crtGetShowWindowMode",
+          "_amsg_exit",
+          "__getmainargs",
+          "__set_app_type",
+          "exit",
+          "_exit",
+          "_cexit",
+          "_ismbblead",
+          "_configthreadlocale",
+          "__setusermatherr",
+          "_initterm_e",
+          "_initterm",
+          "_acmdln",
+          "_fmode",
+          "_commode"
+        ]
+      }
+    ],
+    "machine": "0x14c",
+    "sections": [
+      {
+        "entropy": 6.120912,
+        "name": ".text",
+        "raw_size": 56320,
+        "virtual_size": 56228
+      },
+      {
+        "entropy": 5.045046,
+        "name": ".rdata",
+        "raw_size": 18944,
+        "virtual_size": 18772
+      },
+      {
+        "entropy": 0.307544,
+        "name": ".data",
+        "raw_size": 512,
+        "virtual_size": 33580
+      },
+      {
+        "entropy": 4.710061,
+        "name": ".rsrc",
+        "raw_size": 512,
+        "virtual_size": 480
+      },
+      {
+        "entropy": 6.769892,
+        "name": ".reloc",
+        "raw_size": 9216,
+        "virtual_size": 8872
+      }
+    ],
+    "timestamp": 1431136170
+  },
+  "provenance": {
+    "argv": [
+      "chronofold/cli/extract_pe.py",
+      "experiments/asteroids/exe/Asteroids.exe",
+      "-o",
+      "experiments/asteroids/blind/cf-ir.json"
+    ],
+    "lief": "1.0.0-d05b3499b",
+    "pefile": "2024.8.26",
+    "platform": "Linux-6.17.0-PRoot-Distro-aarch64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "schema": "cf-ir/pe-v0.1"
+}
