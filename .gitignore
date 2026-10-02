@@ -25,3 +25,6 @@ gradle.properties
 
 # Patches
 *.patch
+# ChronoFold generated Python artifacts
+__pycache__/
+*.pyc

@@ -1,0 +1,4 @@
+# ChronoFold PE extraction lane
+lief==1.0.0
+pefile==2024.8.26
+capstone
